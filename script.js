@@ -36,3 +36,8 @@ greetButton.addEventListener("click", function () {
     greeting.textContent = "Nice to meet you, " + name + "!";
   }
 });
+const fruits = ["apple", "banana", "cherry"];
+
+console.log(fruits);
+console.log(fruits[0]);
+console.log(fruits.length);
