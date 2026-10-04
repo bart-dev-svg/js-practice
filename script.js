@@ -51,3 +51,19 @@ for (const fruit of fruits) {
   item.textContent = fruit;
   fruitList.appendChild(item);
 }
+const fruitInput = document.getElementById("fruitInput");
+const addFruitButton = document.getElementById("addFruitButton");
+
+addFruitButton.addEventListener("click", function () {
+  const newFruit = fruitInput.value;
+
+  if (newFruit === "") {
+    return;
+  }
+
+  const item = document.createElement("li");
+  item.textContent = newFruit;
+  fruitList.appendChild(item);
+
+  fruitInput.value = "";
+});
