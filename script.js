@@ -23,3 +23,16 @@ resetButton.addEventListener("click", function () {
   count = 0;
   updateMessage();
 });
+const nameInput = document.getElementById("nameInput");
+const greetButton = document.getElementById("greetButton");
+const greeting = document.getElementById("greeting");
+
+greetButton.addEventListener("click", function () {
+  const name = nameInput.value;
+
+  if (name === "") {
+    greeting.textContent = "Please type your name first.";
+  } else {
+    greeting.textContent = "Nice to meet you, " + name + "!";
+  }
+});
