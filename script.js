@@ -41,3 +41,13 @@ const fruits = ["apple", "banana", "cherry"];
 console.log(fruits);
 console.log(fruits[0]);
 console.log(fruits.length);
+for (const fruit of fruits) {
+  console.log("I like " + fruit);
+}
+const fruitList = document.getElementById("fruitList");
+
+for (const fruit of fruits) {
+  const item = document.createElement("li");
+  item.textContent = fruit;
+  fruitList.appendChild(item);
+}
