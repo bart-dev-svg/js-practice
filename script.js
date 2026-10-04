@@ -67,3 +67,8 @@ addFruitButton.addEventListener("click", function () {
 
   fruitInput.value = "";
 });
+fruitList.addEventListener("click", function (event) {
+  if (event.target.tagName === "LI") {
+    event.target.remove();
+  }
+});
